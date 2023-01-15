@@ -181,6 +181,12 @@ body {
   width: 60%;
 }
 
+@media (max-width: 962px) {
+  .SuperHero .AppBody .ContentList {
+    width: 100%;
+  }
+}
+
 .SuperHero .AppBody .ContentList .NameSuper {
   color: var(--light-color);
   text-transform: capitalize;
