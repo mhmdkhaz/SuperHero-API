@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- start in google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="FontAwesome/css font/all.min.css" />
+  </head>
+  <body>
+    <div class="SuperHero">
+      <div class="SearchHeadlind">
+        <h1 class="headline">super<span>Hero.</span></h1>
+        <div style="position: relative">
+          <input type="search" placeholder="Search your superhero here ..." />
+          <div class="search-list" id="search-list"></div>
+        </div>
+      </div>
+
+      <div class="AppBody">
+        <div class="ContentImg">
+          <img
+            src="images/5977ae08a09c32cecec83be4b65840f5.jpg"
+            class="ImgHero"
+            alt=""
+          />
+        </div>
+        <div class="ContentList">
+          <h1 class="NameSuper">My Hero</h1>
+          <!-- list select tap -->
+          <div class="list">
+            <ul class="Tap">
+              <li data-show=".powerstats">
+                <span class="active">POWERSTATS</span>
+              </li>
+              <li data-show=".biography"><span>BIOGRAPHY</span></li>
+              <li data-show=".appearance"><span>APPEARANCE</span></li>
+              <li data-show=".connections"><span>CONNECTIONS</span></li>
+            </ul>
+
+            <!-- powerstats tap -->
+            <div class="TapBodySingle powerstats">
+              <ul></ul>
+            </div>
+
+            <!-- biography tap -->
+            <div class="TapBodySingle biography">
+              <ul>
+                <li>
+                  <span class="">full name</span>
+                  <span>mhmdkhazaa</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- APPEARANCE tap -->
+            <div class="TapBodySingle appearance">
+              <ul>
+                <li>
+                  <div class="IconText">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>intelligence</span>
+                  </div>
+                  <span class="inforamtion">100</span>
+                </li>
+              </ul>
+            </div>
+            <!-- CONNECTIONS tap -->
+            <div class="TapBodySingle connections">
+              <ul>
+                <li>
+                  <span>group--affiliation</span>
+                  <span>Batman Family, Justice League Unlimited</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
