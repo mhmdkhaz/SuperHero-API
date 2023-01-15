@@ -74,6 +74,12 @@ body {
   }
 }
 
+.SuperHero .SearchHeadlind .ContentInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .SuperHero .SearchHeadlind .headline {
   color: var(--light-color);
   font-size: 2rem;
@@ -88,10 +94,16 @@ body {
   border: 2px solid var(--grey-color);
   border-radius: 30px;
   font-size: 1.4rem;
-  min-width: 30vw;
+  min-width: 100%;
   height: 25px;
   padding: 15px 10px;
   color: var(--light-color);
+}
+
+@media (max-width: 962px) {
+  .SuperHero .SearchHeadlind input {
+    width: 60vw;
+  }
 }
 /* search list */
 .search-list {
@@ -163,6 +175,10 @@ body {
   .SuperHero .AppBody .ContentImg img {
     width: 100%;
   }
+}
+
+.SuperHero .AppBody .ContentList {
+  width: 60%;
 }
 
 .SuperHero .AppBody .ContentList .NameSuper {
