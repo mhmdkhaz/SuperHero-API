@@ -52,6 +52,7 @@ body {
   border-radius: 8px;
   height: 110vh;
   padding: 40px;
+  overflow: hidden;
 }
 @media (max-width: 929px) {
   .SuperHero {
@@ -191,7 +192,76 @@ body {
   color: var(--light-color);
   text-transform: capitalize;
   letter-spacing: 6px;
+  font-size: 4vw;
   font-family: "Crimson Pro", serif;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+/* before started  */
+.BeforeStarted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  transition: 0.8s;
+  transform: translateY(100px);
+}
+
+.BeforeStarted p {
+  font-size: 4vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  position: absolute;
+}
+
+.BeforeStarted .fancy {
+  position: relative;
+  color: var(--yellow-color);
+  white-space: nowrap;
+}
+
+.BeforeStarted .fancy::after {
+  --deco-height: 0.3125em;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--deco-height) * -0.625);
+  height: var(--deco-height);
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: auto 100%;
+  background-repeat: round;
+  background-position: 0em;
+}
+
+.BeforeStarted i {
+  position: absolute;
+  text-align: center;
+  padding: 45px;
+  color: var(--light-color);
+  left: 50%;
+  transform: translate(-50%, 100%);
+  font-size: 50px;
+}
+
+@media (max-width: 962px) {
+  .BeforeStarted i {
+    padding: 0;
+  }
+}
+
+/* Tap */
+
+.SuperHero .AppBody .ContentInfromation {
+  transform: scale(0);
+  transition: 0.8s;
+  transition-delay: 1s;
 }
 
 .SuperHero .AppBody .ContentList .list .Tap {
@@ -218,6 +288,7 @@ body {
 @media (max-width: 962px) {
   .SuperHero .AppBody .ContentList .NameSuper {
     text-align: center;
+    margin-top: 15px;
   }
 
   .SuperHero .AppBody .ContentList .list .Tap {
@@ -265,6 +336,11 @@ body {
 }
 .SuperHero .AppBody .IconText {
   text-transform: capitalize;
+}
+
+.SuperHero .AppBody .TapBodySingle {
+  overflow: hidden;
+  transition: 1s;
 }
 
 /* powerstats */

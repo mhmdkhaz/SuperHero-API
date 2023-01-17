@@ -1,4 +1,7 @@
+let TapContainer = document.querySelector(".list .ContentInfromation");
 let TapList = document.querySelectorAll(".list .Tap li");
+let BeforeStarted = document.querySelector(".BeforeStarted");
+let ContainerImgMain = document.querySelector(".NameSuper");
 let TapListSpan = document.querySelectorAll(".list .Tap li span");
 let TapInformation = document.querySelectorAll(".TapBodySingle");
 let SearchValue = document.querySelector(".SuperHero input");
@@ -27,6 +30,16 @@ let AddClassHide = () => {
 let RemoveClassHide = () => {
   AddClassHide();
   TapInformation[0].classList.remove("HideElement");
+};
+
+// animation name super
+let AnimtaionName = () => {
+  // list item
+  TapContainer.style.transform = "scale(1)";
+  // img hero
+  ContainerImgMain.style.transform = "scale(1)";
+  // hello
+  BeforeStarted.style.opacity = "0";
 };
 
 // show box after click tap list
@@ -92,6 +105,8 @@ let ClickListSearchGetData = () => {
 
   ListItems.forEach((HeroSelection) => {
     HeroSelection.onclick = () => {
+      AnimtaionName();
+      // hide list item for search
       searchList.style.visibility = "hidden";
       let GetNameSuper = HeroSelection.children[1].textContent;
       let DataInformationApi = `https://www.superheroapi.com/api.php/727054372039115/search/${GetNameSuper}`;
@@ -115,7 +130,7 @@ let validityAndTransfer = async (NameSuperHero) => {
 
 let AddInformationInBoxUseApi = (data) => {
   document.querySelector(".ImgHero").src = `${data[0].image.url}`;
-  document.querySelector(".NameSuper").textContent = `${data[0].name}`;
+  ContainerImgMain.textContent = `${data[0].name}`;
 
   // add info powerstats
 
