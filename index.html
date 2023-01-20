@@ -21,11 +21,30 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- loader  -->
+    <div class="contetnLoader">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+    <!-- loader  -->
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <!-- cursor -->
     <div class="SuperHero">
       <div class="SearchHeadlind">
         <h1 class="headline">super<span>Hero.</span></h1>
         <div style="position: relative" class="ContentInput">
-          <input type="search" placeholder="Search your superhero here ..." />
+          <input
+            type="search"
+            placeholder="Search your superhero here ..."
+            autofocus
+          />
           <div class="search-list" id="search-list"></div>
         </div>
       </div>
@@ -61,44 +80,45 @@
                 <li data-show=".connections"><span>CONNECTIONS</span></li>
               </ul>
 
-              <!-- powerstats tap -->
-              <div class="TapBodySingle powerstats">
-                <ul></ul>
-              </div>
+              <div class="test">
+                <!-- powerstats tap -->
+                <div class="TapBodySingle powerstats">
+                  <ul></ul>
+                </div>
 
-              <!-- biography tap -->
-              <div class="TapBodySingle biography">
-                <ul data-aos="fade-right" data-aos-duration="3000">
-                  <li>
-                    <span class="">full name</span>
-                    <span>mhmdkhazaa</span>
-                  </li>
-                </ul>
-              </div>
+                <!-- biography tap -->
+                <div class="TapBodySingle biography">
+                  <ul data-aos="fade-right" data-aos-duration="3000">
+                    <li>
+                      <span class="">full name</span>
+                      <span>mhmdkhazaa</span>
+                    </li>
+                  </ul>
+                </div>
 
-              <!-- APPEARANCE tap -->
-              <div class="TapBodySingle appearance">
-                <ul>
-                  <li>
-                    <div class="IconText">
-                      <i class="fa-solid fa-shield-halved"></i>
-                      <span>intelligence</span>
-                    </div>
-                    <span class="inforamtion">100</span>
-                  </li>
-                </ul>
-              </div>
-              <!-- CONNECTIONS tap -->
-              <div class="TapBodySingle connections">
-                <ul>
-                  <li>
-                    <span>group--affiliation</span>
-                    <span>Batman Family, Justice League Unlimited</span>
-                  </li>
-                </ul>
+                <!-- APPEARANCE tap -->
+                <div class="TapBodySingle appearance">
+                  <ul>
+                    <li>
+                      <div class="IconText">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>intelligence</span>
+                      </div>
+                      <span class="inforamtion">100</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- CONNECTIONS tap -->
+                <div class="TapBodySingle connections">
+                  <ul>
+                    <li>
+                      <span>group--affiliation</span>
+                      <span>Batman Family, Justice League Unlimited</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

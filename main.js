@@ -6,6 +6,34 @@ let TapListSpan = document.querySelectorAll(".list .Tap li span");
 let TapInformation = document.querySelectorAll(".TapBodySingle");
 let SearchValue = document.querySelector(".SuperHero input");
 let searchList = document.querySelector(".search-list");
+const cursor = document.querySelector(".cursor");
+const loader = document.querySelector(".contetnLoader");
+const loaderskchase = document.querySelector(".contetnLoader .sk-chase");
+
+// loader
+let TimeLoader = () => {
+  setTimeout(() => {
+    loader.style.width = "0";
+    loader.style.opacity = "0";
+    loaderskchase.style.width = "0";
+  }, 2500);
+};
+
+// cursor
+document.addEventListener("mousemove", (e) => {
+  cursor.setAttribute(
+    "style",
+    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+  );
+});
+
+document.addEventListener("click", () => {
+  cursor.classList.add("expand");
+
+  setTimeout(() => {
+    cursor.classList.remove("expand");
+  }, 500);
+});
 
 // remove and add class active in tap
 let RemoveAddActiveTap = () => {
@@ -56,6 +84,7 @@ let ShowElementAfterClickTap = () => {
 const Init = () => {
   RemoveClassHide();
   ShowElementAfterClickTap();
+  TimeLoader();
 };
 
 window.addEventListener("reload", Init());
