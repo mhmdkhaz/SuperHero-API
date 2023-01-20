@@ -14,7 +14,7 @@
   --grey-color: #505050;
   --yellow-color: #f2c10e;
   --min-height: 125vh;
-  --height-responsive: 80vh;
+  --height-responsive: 100vh;
 }
 
 /* style scroll */
@@ -576,7 +576,7 @@ body {
 
   .SuperHero {
     overflow-y: scroll;
-    height: 72vh;
+    height: 90vh;
     min-height: 0;
   }
 
