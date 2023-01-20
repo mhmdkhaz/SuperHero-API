@@ -13,6 +13,8 @@
   --light-color: #fff;
   --grey-color: #505050;
   --yellow-color: #f2c10e;
+  --min-height: 125vh;
+  --height-responsive: 80vh;
 }
 
 /* style scroll */
@@ -35,7 +37,7 @@
 
 body {
   font-size: 1.7rem;
-  min-height: 100vh;
+  min-height: var(--min-height);
   background: var(--red-color);
   background: linear-gradient(169deg, #f64445 0%, #611cac 100%);
   padding: 20px 0;
@@ -52,7 +54,7 @@ body {
 .contetnLoader {
   background-color: var(--red-color);
   width: 100vw;
-  min-height: 120vh;
+  min-height: var(--min-height);
   position: absolute;
   z-index: 2;
   display: flex;
@@ -155,6 +157,8 @@ body {
   border: 1px solid var(--red-color);
   border-radius: 50%;
   position: absolute;
+  top: 0;
+  left: 0;
   transition-duration: 200ms;
   transition-timing-function: ease-out;
   animation: cursorAnim 0.5s infinite alternate;
@@ -216,7 +220,7 @@ body {
   background-color: var(--dark-color);
   width: 80vw;
   border-radius: 8px;
-  height: 110vh;
+  min-height: 110vh;
   padding: 40px;
   overflow: hidden;
 }
@@ -556,8 +560,14 @@ body {
 /* media query responsive */
 @media (max-width: 962px) {
   body {
-    height: 70vh;
+    height: var(--height-responsive);
+    min-height: 0;
     align-items: flex-start;
+  }
+
+  .contetnLoader {
+    height: var(--height-responsive);
+    min-height: 0;
   }
 
   .cursor {
@@ -566,7 +576,8 @@ body {
 
   .SuperHero {
     overflow-y: scroll;
-    height: 70vh;
+    height: 72vh;
+    min-height: 0;
   }
 
   .SuperHero .SearchHeadlind {
