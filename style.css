@@ -40,7 +40,7 @@ body {
   min-height: var(--min-height);
   background: var(--red-color);
   background: linear-gradient(169deg, #f64445 0%, #611cac 100%);
-  padding: 45px 0;
+  padding: 10px 0;
   font-family: var(--poppins-font);
   display: flex;
   align-items: center;
@@ -593,7 +593,7 @@ body {
   }
 
   .SuperHero {
-    height: 90vh;
+    height: 100vh;
     min-height: 0;
   }
 
