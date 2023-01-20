@@ -575,7 +575,6 @@ body {
   }
 
   .SuperHero {
-    overflow-y: scroll;
     height: 90vh;
     min-height: 0;
   }
@@ -598,6 +597,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
   }
 
   .SuperHero .AppBody .ContentList {
