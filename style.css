@@ -616,6 +616,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
+    padding: 0 10px;
   }
 
   .SuperHero .AppBody .ContentList {
