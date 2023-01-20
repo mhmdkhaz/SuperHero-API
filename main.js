@@ -14,7 +14,7 @@ const loaderskchase = document.querySelector(".contetnLoader .sk-chase");
 let TimeLoader = () => {
   setTimeout(() => {
     loader.style.width = "0";
-    loader.style.opacity = "0";
+    loader.style.opacity = ".8";
     loaderskchase.style.width = "0";
   }, 2500);
 };
